@@ -1,4 +1,5 @@
--- Write your PostgreSQL query statement below
-SELECT * FROM Cinema
-WHERE MOD(id, 2) <> 0 AND Cinema.description NOT IN ('boring')  
+# Write your MySQL query statement below
+SELECT id, movie, description, rating 
+FROM cinema
+WHERE id % 2 != 0 AND description NOT LIKE \boring\
 ORDER BY rating DESC;
