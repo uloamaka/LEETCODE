@@ -1,13 +1,15 @@
 func countConsistentStrings(allowed string, words []string) int {
     allowedStrCnt := 0
     for _, word := range words {
-        for i, v := range word {
-            if ok := strings.Contains(allowed, string(v)); !ok {
+        isValid := true
+        for _, v := range word {
+            if !strings.Contains(allowed, string(v)) {
+                isValid = false
                 break
             }
-            if i == len(word) - 1 {
-                 allowedStrCnt++
-            }
+        }
+        if isValid {
+            allowedStrCnt++
         }
     }
     return allowedStrCnt
