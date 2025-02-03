@@ -1,8 +1,15 @@
 func subsetXORSum(nums []int) int {
-	sumTotal := 0
+    return dfs(nums, 0, 0)
+}
 
-	for _, num := range nums {
-		sumTotal |= num
-	}
-	return sumTotal << (len(nums) - 1)
+func dfs(nums []int, index int, xorSum int) int {
+    if index == len(nums) {
+        return xorSum 
+    }
+    
+    include := dfs(nums, index+1, xorSum^nums[index])
+    
+    exclude := dfs(nums, index+1, xorSum)
+    
+    return include + exclude
 }
