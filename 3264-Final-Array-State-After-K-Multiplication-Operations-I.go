@@ -1,8 +1,7 @@
 func getFinalState(nums []int, k int, multiplier int) []int {
     for i := 0; i < k; i ++ {
         index, x := minIntSlice(nums)
-        nx := x * multiplier
-        nums[index] = nx
+        nums[index] = x * multiplier
     }
     return nums
 }
