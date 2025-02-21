@@ -1,12 +1,25 @@
 func arrayStringsAreEqual(word1 []string, word2 []string) bool {
-    var str1, str2 strings.Builder
+    i, j := 0, 0 
+    ci, cj := 0, 0 
 
-    for _, val := range word1 {
-        str1.WriteString(val)
-    }
-    for _, val := range word2 {
-        str2.WriteString(val)
+    for i < len(word1) && j < len(word2) {
+        if word1[i][ci] != word2[j][cj] {
+            return false
+        }
+
+        ci++
+        cj++
+
+        if ci == len(word1[i]) {
+            i++
+            ci = 0
+        }
+
+        if cj == len(word2[j]) {
+            j++
+            cj = 0
+        }
     }
 
-    return str1.String() == str2.String()
+    return i == len(word1) && j == len(word2)
 }
