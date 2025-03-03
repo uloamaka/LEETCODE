@@ -1,16 +1,14 @@
 func countGoodRectangles(rectangles [][]int) int {
     maxLens := make([]int, len(rectangles))
+    m := make(map[int]int)
+    
     for i, rectangle := range rectangles {
-        min := slices.Min(rectangle)
-        maxLens[i] = min
+        minLen := slices.Min(rectangle)
+        maxLens[i] = minLen
+
+        m[minLen] += 1
     }
 
-    maxINT := slices.Max(maxLens)
-    cnt := 0
-    for _, len := range maxLens {
-        if len == maxINT {
-            cnt++
-        }
-    }
-    return cnt
+    maxLen := slices.Max(maxLens)
+    return m[maxLen]
 }
