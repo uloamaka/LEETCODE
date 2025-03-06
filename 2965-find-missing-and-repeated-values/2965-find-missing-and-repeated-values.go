@@ -1,22 +1,19 @@
 func findMissingAndRepeatedValues(grid [][]int) []int {
+    sum, sqrSum := 0, 0
     n := len(grid)
-    ans := make([]int, 2)
-    dupMap := make(map[int]bool)
-    for i := 0; i < n; i++ {
-        for _, gdValue := range grid[i] {
-            if _, ok := dupMap[gdValue]; !ok {
-                dupMap[gdValue] = false
-            } else {
-                dupMap[gdValue] = true
-                ans[0] = gdValue
-            }
+    total := n*n
+    for r := 0; r < n; r++ {
+        for c := 0; c< n; c++ {
+            sum += grid[r][c]
+            sqrSum += grid[r][c]*grid[r][c]
         }
     }
-    for i := 1; i <= n*n ; i++ {
-        if _, ok := dupMap[i]; !ok {
-            ans[1] = i
-        }
-    }
-    return ans
+    sumDiff := sum - (total * (total + 1) / 2)
+    sqrDiff := sqrSum - (total * (total + 1) * (2 * total + 1) / 6)
     
+    ans := make([]int, 2)
+    ans[0] = (sqrDiff / sumDiff + sumDiff) / 2
+    ans[1] = (sqrDiff / sumDiff - sumDiff) / 2
+    
+    return ans
 }
