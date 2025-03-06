@@ -11,9 +11,8 @@ func findMissingAndRepeatedValues(grid [][]int) []int {
     sumDiff := sum - (total * (total + 1) / 2)
     sqrDiff := sqrSum - (total * (total + 1) * (2 * total + 1) / 6)
     
-    ans := make([]int, 2)
-    ans[0] = (sqrDiff / sumDiff + sumDiff) / 2
-    ans[1] = (sqrDiff / sumDiff - sumDiff) / 2
+    repeat := (sqrDiff / sumDiff + sumDiff) / 2
+    missing := (sqrDiff / sumDiff - sumDiff) / 2
     
-    return ans
+    return []int{repeat, missing}
 }
