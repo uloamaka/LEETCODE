@@ -9,8 +9,6 @@ func maxDifference(s string) int {
 	var (
 		minEven int
 		maxOdd int
-		foundEven bool
-		foundOdd bool
 	)
 
 	minEven = 1 << 31    
@@ -18,12 +16,10 @@ func maxDifference(s string) int {
 
 	for _, num := range sm {
 		if checkEven(num) {
-			foundEven = true
 			if num < minEven {
 				minEven = num
 			}
 		} else {
-			foundOdd = true
 			if num > maxOdd {
 				maxOdd = num
 			}
