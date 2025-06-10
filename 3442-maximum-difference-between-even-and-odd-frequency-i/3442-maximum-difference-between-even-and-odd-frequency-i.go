@@ -46,12 +46,12 @@ func maxDifference(s string) int {
 
 	// The maximum difference can be either:
 	// (maxEven - minOdd) or (maxOdd - minEven)
-	diff1 := maxEven - minOdd
+	// diff1 := maxEven - minOdd
 	diff2 := maxOdd - minEven
 
-	if diff1 > diff2 {
-		return diff1
-	}
+	// if diff1 > diff2 {
+	// 	return diff1
+	// }
 	return diff2
 }
 
