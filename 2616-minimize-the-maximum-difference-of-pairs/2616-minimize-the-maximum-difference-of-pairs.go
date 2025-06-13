@@ -22,7 +22,7 @@ func countValidPairs(nums []int, mid int) int {
 	for i < len(nums)-1 {
 		if nums[i+1]-nums[i] <= mid {
 			count++
-			i += 2 // skip next element as it's already paired
+			i += 2 
 		} else {
 			i++
 		}
