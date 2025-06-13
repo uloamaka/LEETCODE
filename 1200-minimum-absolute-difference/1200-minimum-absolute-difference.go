@@ -2,23 +2,20 @@ func minimumAbsDifference(arr []int) [][]int {
     if sort.IntsAreSorted(arr) != true {
         sort.Ints(arr)
     } 
+    minDiff := math.MaxInt32
+    var ans [][]int
     
-    leftIdx := 0 
-    rightIdx := 1
-    minSlice := []int{arr[leftIdx], arr[rightIdx]}
-    ans := [][]int{minSlice}
-    minAbsDiff := abs(arr[leftIdx] - arr[rightIdx])
-    for i := 1; i < len(arr)-1; i++ {
-        if abs(arr[i] - arr[i+1]) == minAbsDiff {
-            ans = append(ans, []int{arr[i],arr[i+1]})
-        }
-    }
-    return ans
+    for i := 1; i < len(arr); i++ {
+		diff := arr[i] - arr[i-1]
+		
+		if diff < minDiff {
+			minDiff = diff
+			ans = [][]int{{arr[i-1], arr[i]}} // Reset with new pair
+		} else if diff == minDiff {
+			ans = append(ans, []int{arr[i-1], arr[i]})
+		}
+	}
+    return ans 
 }
 
-func abs(x int) int {
-    if x < 0 {
-        return -x
-    }
-    return x
-}
+
