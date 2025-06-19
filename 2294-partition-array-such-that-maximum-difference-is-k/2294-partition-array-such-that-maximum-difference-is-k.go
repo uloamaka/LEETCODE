@@ -1,13 +1,13 @@
 func partitionArray(nums []int, k int) int {
     sort.Ints(nums)
-    cnt := 0
-    left := 0
+    cnt := 1
+    start := nums[0]
     
-    for right := 0; right < len(nums); right++ {
-        if nums[right]-nums[left] > k {
+    for i := 1; i < len(nums); i++ {
+        if nums[i]-start > k {
             cnt++
-            left = right
+            start = nums[i]
         }
     }
-    return cnt + 1
+    return cnt
 }
