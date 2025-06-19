@@ -1,5 +1,4 @@
 func partitionArray(nums []int, k int) int {
-    sort.Ints(nums)
     cnt := 1
     start := nums[0]
     
