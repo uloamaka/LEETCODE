@@ -5,11 +5,11 @@ func divideString(s string, k int, fill byte) []string {
     start, end := 0, k
     for i := 0; i < subSlice; i++ {
         strSlice = append(strSlice, string(s[start:end]))
-        start += subSlice
-        end += subSlice
+        start += k
+        end += k
     }
     // use the fill for the last group
-    mod := sliceSize%k
+    mod := sliceSize % k
     if mod != 0 {
         extraIdx := k - mod 
         extraCharIdx := sliceSize - mod
