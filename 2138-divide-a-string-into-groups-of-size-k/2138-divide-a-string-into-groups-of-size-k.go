@@ -1,24 +1,25 @@
 func divideString(s string, k int, fill byte) []string {
-    sliceSize := len(s)
-    strSlice := []string{}
-    subSlice := sliceSize/k
-    start, end := 0, k
-    for i := 0; i < subSlice; i++ {
-        strSlice = append(strSlice, string(s[start:end]))
-        start += k
-        end += k
+    totalLen := len(s)
+    result := []string{}
+    fullGroups := totalLen / k
+    startIdx, endIdx := 0, k
+
+    // Add full groups
+    for i := 0; i < fullGroups; i++ {
+        result = append(result, s[startIdx:endIdx])
+        startIdx += k
+        endIdx += k
     }
-    // use the fill for the last group
-    mod := sliceSize % k
-    if mod != 0 {
-        extraIdx := k - mod 
-        extraCharIdx := sliceSize - mod
-        str := s[extraCharIdx:]
-        for i := 0; i < extraIdx; i++ {
-            str += string(fill)
+
+    // Handle last group if it's not a full group
+    remaining := totalLen % k
+    if remaining != 0 {
+        lastGroup := s[totalLen-remaining:]
+        for i := 0; i < k-remaining; i++ {
+            lastGroup += string(fill)
         }
-        strSlice = append(strSlice, string(str))
+        result = append(result, lastGroup)
     }
-   
-    return strSlice
+
+    return result
 }
