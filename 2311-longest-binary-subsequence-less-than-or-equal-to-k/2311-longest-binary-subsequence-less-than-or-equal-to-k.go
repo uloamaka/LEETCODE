@@ -1,37 +1,67 @@
 func longestSubsequence(s string, k int) int {
-    n := len(s)
-    left := n - 1
-    right := n
-    ans :=  0
-    if n == 1 {
-        return 1
-    }
-    i, _ := strconv.ParseInt(s[0:], 2, 64);
-    if int64(k) < i {
-        for j := n; j > 1; j-- {
-            i, _ := strconv.ParseInt(s[left:right], 2, 64); 
-            if i <= int64(k) {
-                ans++   
-                // fmt.Println(ans)     
-            } else {
-                fmt.Println(ans) 
-                break
-            }
-            left--
+    // n := len(s)
+    
+    // Count total zeros - they can always be included
+    zeros := 0
+    for _, ch := range s {
+        if ch == '0' {
+            zeros++
         }
-        ans += countOnlyZeroFromCurrLeft(left, s) 
-        return ans
-    } else {
-        return n
     }
+    
+    // Try different numbers of ones, starting from maximum possible
+    maxOnes := 0
+    for numOnes := min(32, countOnes(s)); numOnes >= 0; numOnes-- {
+        if canFormValue(s, numOnes, k) {
+            maxOnes = numOnes
+            break
+        }
+    }
+    
+    return zeros + maxOnes
 }
 
-func countOnlyZeroFromCurrLeft(curr_left int, binaryStr string) int {
-    cnt := 0
-    for _, rn :=  range binaryStr[0:curr_left] {
-        if rn == '0' {
-            cnt++
+func countOnes(s string) int {
+    count := 0
+    for _, ch := range s {
+        if ch == '1' {
+            count++
         }
     }
-    return cnt
+    return count
+}
+
+func canFormValue(s string, numOnes int, k int) bool {
+    if numOnes == 0 {
+        return true
+    }
+    
+    // Greedy: pick the rightmost 'numOnes' ones to minimize value
+    value := 0
+    power := 1
+    onesUsed := 0
+    
+    // Scan from right to left
+    for i := len(s) - 1; i >= 0 && onesUsed < numOnes; i-- {
+        if s[i] == '1' {
+            value += power
+            onesUsed++
+            if value > k {
+                return false
+            }
+        }
+        power *= 2
+        if power > k + 1 { // Prevent overflow
+            break
+        }
+    }
+    
+    return onesUsed == numOnes && value <= k
+}
+
+func min(a, b int) int {
+    if a < b {
+        return a
+    }
+    return b
 }
