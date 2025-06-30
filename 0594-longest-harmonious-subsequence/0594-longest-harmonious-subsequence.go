@@ -4,24 +4,13 @@ func findLHS(nums []int) int {
         freq[num]++
     }
     
-    keySli := []int{}
-    for key, _ := range freq {
-        keySli = append(keySli, key)
-    }
-    sort.Ints(keySli)
-
-    highestFreqCnt := 0
-    for i := 1; i < len(keySli); i++ {
-        if keySli[i]-keySli[i-1] == 1 {
-            sum := freq[keySli[i]] + freq[keySli[i-1]]
-            if sum > highestFreqCnt {
-                highestFreqCnt = sum
+    maxLen := 0
+    for key, count := range freq {
+        if countAdj, exists := freq[key + 1]; exists {
+            if count + countAdj > maxLen {
+                maxLen = count + countAdj
             }
         }
     }
-    return highestFreqCnt
+    return maxLen
 }
-
-    // get the freq map of nums
-    // get the highestFreqCnt, i.e the sum of cnt of 2 subsequent nums in the freq slice
-    // return tthe cnt
