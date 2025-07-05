@@ -4,20 +4,14 @@ func findLucky(arr []int) int {
         freqMp[elem]++
     }
 
-    newSlice := make([]int, 0)
-    for key, elem := range freqMp {
-        if key == elem {
-            newSlice = append(newSlice, key)
+    maxLucky := -1
+    for key, freq := range freqMp {
+        if key == freq && key > maxLucky {
+            maxLucky = key
         }
     }
-    
-    n := len(newSlice)
-    sort.Ints(newSlice)
-    if n != 0 {
-        return newSlice[n-1]
-    }
-    // fmt.Println()
-    return -1
+
+    return maxLucky
 }
 // use a freq map
 //  get the length of the map
