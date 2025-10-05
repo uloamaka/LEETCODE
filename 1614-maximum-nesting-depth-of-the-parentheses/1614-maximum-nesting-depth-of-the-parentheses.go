@@ -9,12 +9,12 @@ func maxDepth(s string) int {
         }
         
         if rn == ')' {
-            if stack[len(stack)-1] == '(' {
+            // if stack[len(stack)-1] == '(' {
                 if len(stack) > maxSeen {
                     maxSeen = len(stack)
                 }
                 stack = stack[:len(stack)-1]
-            }
+            // }
         }
     }
     return maxSeen
