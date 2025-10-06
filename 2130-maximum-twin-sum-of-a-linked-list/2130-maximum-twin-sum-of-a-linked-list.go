@@ -6,24 +6,27 @@
  * }
  */
 func pairSum(head *ListNode) int {
-    list := []int{}
-    curr := head
-    for curr != nil {
-        list = append(list, curr.Val)
-        curr = curr.Next
-    } 
-    return getMax(list)
-}
-func getMax(list []int) int {
-    max := 0
-    l, r := 0, len(list)-1
-    for l < r {
-        sum := list[l]+list[r]
-        if sum > max {
-            max = sum
-        }
-        r--
-        l++
+    stack := []int{}
+    current := head
+    future := head
+
+    for future != nil && future.Next != nil {
+        stack = append(stack, current.Val)
+        current = current.Next
+        future = future.Next.Next
     }
-    return max
+    
+    maxSum := 0
+    for current != nil {
+        val := stack[len(stack)-1]
+        stack = stack[:len(stack)-1]
+        sum := current.Val + val
+
+        if sum > maxSum {
+            maxSum = sum
+        }
+        current = current.Next
+    }
+   
+    return maxSum
 }
