@@ -1,37 +1,22 @@
+func isIncreasing(arr []int) bool {
+    for i := 1; i < len(arr); i++ {
+        if arr[i] <= arr[i-1] {
+            return false
+        }
+    }
+    return true
+}
+
 func hasIncreasingSubarrays(nums []int, k int) bool {
     n := len(nums)
-    l := 0
-    ans1, ans2 := false, false
-    for l <= n-2*k {
-        r := l+k
+    if n < 2*k {
+        return false
+    }
 
-        fseen1 := -1000
-        for _, val := range nums[l:l+k] {
-            if fseen1 >= val {
-                ans1 = false
-                break
-            } else {
-                fseen1 = val
-                ans1 = true
-            }
-        }
-        
-        fseen2 := -1000
-        for _, val := range nums[r:r+k] {
-            if fseen2 >= val {
-                ans2 = false
-                break
-            } else {
-                fseen2 = val
-                ans2 = true
-            }
-        }
-
-        if ans1 == true && ans2 == true {
+    for l := 0; l <= n-2*k; l++ {
+        if isIncreasing(nums[l:l+k]) && isIncreasing(nums[l+k:l+2*k]) {
             return true
         }
-
-        l++
     }
     return false
 }
