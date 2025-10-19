@@ -1,15 +1,13 @@
 func removeOccurrences(s, part string) string {
-    if !strings.Contains(s, part) {
-        return s // base case
-    }
+    stack := []byte{}
+    n := len(part)
 
-    // find and remove first occurrence
-    for i := 0; i <= len(s)-len(part); i++ {
-        if s[i:i+len(part)] == part {
-            modifiedS := s[:i] + s[i+len(part):]
-            return removeOccurrences(modifiedS, part)
+    for i := 0; i < len(s); i++ {
+        stack = append(stack, s[i])
+        if len(stack) >= n && string(stack[len(stack)-n:]) == part {
+            stack = stack[:len(stack)-n]
         }
     }
 
-    return s
+    return string(stack)
 }
