@@ -1,22 +1,16 @@
 func maxFrequencyElements(nums []int) int {
-    m := make(map[int]int)
-    maxC, cnt := 0, 0
-    
-
+    freqM := make(map[int]int)
     for _, num := range nums {
-        m[num]++
+        freqM[num]++
     }
-
-    //fmt.Println(m)
-    
-    for _, v := range m {
-        if v > maxC {
-            maxC = v
+    maxF, cnt := 0, 0 
+    for _, cn := range freqM {
+        if cn > maxF {
+            maxF = cn
             cnt = 1
-        } else if v == maxC {
+        } else if cn == maxF {
             cnt++
         }
     }
-
-    return cnt*maxC
+    return maxF*cnt
 }
