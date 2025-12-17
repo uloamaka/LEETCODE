@@ -4,10 +4,7 @@ type BrowserHistory struct {
 }
 
 func Constructor(homepage string) BrowserHistory {
-    return BrowserHistory{
-        window:     []string{homepage},
-        currentTab: 0,
-    }
+    return BrowserHistory{[]string{homepage}, 0}
 }
 
 func (bh *BrowserHistory) Visit(url string) {
