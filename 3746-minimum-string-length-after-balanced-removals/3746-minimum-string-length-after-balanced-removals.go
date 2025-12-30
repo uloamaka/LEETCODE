@@ -5,8 +5,8 @@ func minLengthAfterRemovals(s string) int {
 			cnt++
 		}
 	}
-	
-	return abs(len(s) - cnt*2)
+    diff := len(s) - cnt*2
+	return abs(diff)
 }
 
 func abs(val int) int {
