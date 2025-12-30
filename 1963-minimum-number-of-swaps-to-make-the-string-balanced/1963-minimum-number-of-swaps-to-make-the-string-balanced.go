@@ -1,18 +1,19 @@
 func minSwaps(s string) int {
-    stack := []rune{}
-    var bad int
+    balance := 0 // current unmatched '[' count
+    bad := 0     // number of unmatched ']'
 
-    for _, rn := range s {
-        if rn == '[' {
-            stack = append(stack, rn)
-        } 
-        if len(stack) > 0 && rn == ']' {
-            stack = stack[:len(stack)-1]
-            continue
-        } 
-        if rn == ']' {
-            bad++
+    for _, ch := range s {
+        if ch == '[' {
+            balance++
+        } else { // ch == ']'
+            if balance > 0 {
+                balance--
+            } else {
+                bad++
+            }
         }
     }
-    return (bad+1)/2
+
+    // Each swap fixes two bad closings
+    return (bad + 1) / 2
 }
