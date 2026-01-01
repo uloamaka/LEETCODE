@@ -1,13 +1,16 @@
 func minNumberOperations(target []int) int {
-    cnt := target[0]
-    lastSeen := target[0]
+    stack := []int{}
+    ops := 0
 
-    for i := 1; i < len(target); i++ {
-        if target[i] > lastSeen {
-            cnt += target[i] - lastSeen
+    for _, h := range target {
+        if len(stack) == 0 {
+            ops += h
+        } else if stack[len(stack)-1] < h {
+            ops += h - stack[len(stack)-1]
         }
-        lastSeen = target[i]
 
+        stack = append(stack, h)
     }
-    return cnt
+
+    return ops
 }
