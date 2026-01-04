@@ -1,9 +1,9 @@
 func reverseParentheses(s string) string {
-	stack := []byte{}
-	cur := []byte{}
-	for i := range s {
-		if s[i] != ')' {
-			stack = append(stack, s[i])
+	stack := []rune{}
+	cur := []rune{}
+	for _, rn := range s {
+		if rn != ')' {
+			stack = append(stack, rn)
 		} else {
 			for stack[len(stack)-1] != '(' {
 				cur = append(cur, stack[len(stack)-1])
@@ -11,7 +11,7 @@ func reverseParentheses(s string) string {
 			}
 			stack = stack[:len(stack)-1]
 			stack = append(stack, cur...)
-			cur = cur[:0]
+			cur = cur[:0] // clean up reversal stack
 		}
 	}
 	return string(stack)
