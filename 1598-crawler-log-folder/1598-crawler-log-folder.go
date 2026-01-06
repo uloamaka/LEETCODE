@@ -1,10 +1,10 @@
 func minOperations(logs []string) int {
-    stack := []int{}
+    cnt := 0
 
     for _, vl := range logs {
         if vl == "../" {
-            if len(stack) > 0 {
-                stack = stack[:len(stack)-1]
+            if cnt > 0 {
+                cnt--
             }
             continue
         }
@@ -12,9 +12,9 @@ func minOperations(logs []string) int {
         if vl == "./" {
             continue
         }
-        
-        stack = append(stack, 1)
+
+        cnt++
     }
 
-    return len(stack)
+    return cnt
 }
