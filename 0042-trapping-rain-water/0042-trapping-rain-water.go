@@ -25,3 +25,7 @@ func trap(height []int) int {
     
     return water
 }
+
+func init() {
+    debug.SetMemoryLimit(5)
+}
