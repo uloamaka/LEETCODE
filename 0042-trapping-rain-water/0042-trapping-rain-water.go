@@ -27,5 +27,5 @@ func trap(height []int) int {
 }
 
 func init() {
-    debug.SetMemoryLimit(10)
+    debug.SetMemoryLimit(2)
 }
