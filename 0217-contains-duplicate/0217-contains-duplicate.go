@@ -1,14 +1,15 @@
 func containsDuplicate(nums []int) bool {
-    slices.Sort(nums)
-    
-    count := len(nums)
-    seen := nums[0]
+    if len(nums) == 0 {
+        return false
+    }
 
-    for i := 1; i < count; i++ {
-       if seen == nums[i] {
-            return true
+    m := map[int]bool{}
+    for _, num := range nums{
+        if _, ok := m[num]; !ok {
+            m[num] = true
+            continue
         }
-        seen = nums[i]
-    }  
+        return true
+    }
     return false
 }
