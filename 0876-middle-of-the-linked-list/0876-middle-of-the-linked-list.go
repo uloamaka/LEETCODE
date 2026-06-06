@@ -7,15 +7,9 @@
  */
 func middleNode(head *ListNode) *ListNode {
     fastP,slowP := head, head
-    cnt := 0
 
-    for fastP != nil {
-        cnt++
-        fastP = fastP.Next
-    }
-
-    middle := cnt / 2
-    for i := 0; i < middle; i++ {
+    for fastP != nil && fastP.Next != nil {
+        fastP = fastP.Next.Next
         slowP = slowP.Next
     }
 
