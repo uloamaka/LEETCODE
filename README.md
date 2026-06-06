@@ -29,8 +29,13 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0125-valid-palindrome](https://github.com/uloamaka/LEETCODE/tree/main/0125-valid-palindrome/) | Easy |
+| [0876-middle-of-the-linked-list](https://github.com/uloamaka/LEETCODE/tree/main/0876-middle-of-the-linked-list/) | Easy |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0125-valid-palindrome](https://github.com/uloamaka/LEETCODE/tree/main/0125-valid-palindrome/) | Easy |
+## Linked List
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0876-middle-of-the-linked-list](https://github.com/uloamaka/LEETCODE/tree/main/0876-middle-of-the-linked-list/) | Easy |
 <!---LeetCode Topics End-->
