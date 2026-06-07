@@ -1,26 +1,33 @@
+
 func maximumSubarraySum(nums []int, k int) int64 {
-	var maxSum int64 = 0
-	var currentSum int64 = 0
-	left := 0
+    n := len(nums)
+    if k > n {
+        return 0
+    }
 
-	seen := make(map[int]bool)
+    freq := make(map[int]int)
+    windowSum := int64(0)
+    maxSum := int64(0)
 
-	for right := 0; right < len(nums); right++ {
-		for seen[nums[right]] || (right-left+1 > k) {
-			delete(seen, nums[left])
-			currentSum -= int64(nums[left])
-			left++
-		}
+    for i := 0; i < n; i++ {
+        freq[nums[i]]++
+        windowSum += int64(nums[i])
 
-		seen[nums[right]] = true
-		currentSum += int64(nums[right])
+        if i >= k {
+            left := nums[i-k]
+            freq[left]--
+            if freq[left] == 0 {
+                delete(freq, left)
+            }
+            windowSum -= int64(left)
+        }
 
-		if right-left+1 == k {
-			if currentSum > maxSum {
-				maxSum = currentSum
-			}
-		}
-	}
+        if i >= k-1 && len(freq) == k {
+            if windowSum > maxSum {
+                maxSum = windowSum
+            }
+        }
+    }
 
-	return maxSum
+    return maxSum
 }
