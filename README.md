@@ -16,11 +16,13 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | ------- | ------- |
 | [0001-two-sum](https://github.com/uloamaka/LEETCODE/tree/main/0001-two-sum/) | Easy |
 | [0217-contains-duplicate](https://github.com/uloamaka/LEETCODE/tree/main/0217-contains-duplicate/) | Easy |
+| [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/uloamaka/LEETCODE/tree/main/2461-maximum-sum-of-distinct-subarrays-with-length-k/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/uloamaka/LEETCODE/tree/main/0001-two-sum/) | Easy |
 | [0217-contains-duplicate](https://github.com/uloamaka/LEETCODE/tree/main/0217-contains-duplicate/) | Easy |
+| [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/uloamaka/LEETCODE/tree/main/2461-maximum-sum-of-distinct-subarrays-with-length-k/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -38,4 +40,8 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0876-middle-of-the-linked-list](https://github.com/uloamaka/LEETCODE/tree/main/0876-middle-of-the-linked-list/) | Easy |
+## Sliding Window
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/uloamaka/LEETCODE/tree/main/2461-maximum-sum-of-distinct-subarrays-with-length-k/) | Medium |
 <!---LeetCode Topics End-->
