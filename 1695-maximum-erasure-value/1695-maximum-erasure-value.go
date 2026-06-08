@@ -1,17 +1,17 @@
 func maximumUniqueSubarray(nums []int) int {
     var max, l int
 
-    freq := make(map[int]int)
+    seen := [10001]bool{}
     var summer int
     for r := 0; r < len(nums); r++ {
-        freq[nums[r]]++
-        summer += nums[r]
-
-        for freq[nums[r]] > 1 {
-            freq[nums[l]]--
+        for seen[nums[r]] {
+            seen[nums[l]] = false
             summer -= nums[l]
             l++
         }
+
+        seen[nums[r]] = true
+        summer += nums[r]
 
         if summer > max {
             max = summer
@@ -19,13 +19,4 @@ func maximumUniqueSubarray(nums []int) int {
     } 
     return max
 }
-    // m := make(map[int]bool)
-    // ans := 0
-    // for i := 0; i < len(nums); i++ {
-    //     if _, ok := m[nums[i]]; !ok {
-    //         m[nums[i]] = true
-    //         ans += nums[i]
-    //     } 
-    // }
-    // fmt.Println(m)
-    // return ans
+    
