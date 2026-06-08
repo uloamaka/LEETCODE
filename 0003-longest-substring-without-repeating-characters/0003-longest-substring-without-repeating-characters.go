@@ -1,17 +1,15 @@
 func lengthOfLongestSubstring(s string) int {
-    var longest, l int
-
-    freq := make(map[byte]int)
-    for r := 0; r < len(s); r++ {
-        freq[s[r]]++
-
-        for freq[s[r]] > 1 {
-            freq[s[l]] -= 1
-            l++
+    dict := make([]int, 128)
+    var  maxLen, l int
+    for r := 0; r < len(s); r++{
+        currChar := s[r]
+        if dict[currChar] > l {
+            l = dict[currChar]
         }
-        if (r - l + 1) > longest {
-            longest = r-l+1
+        if r - l + 1 > maxLen{
+            maxLen = r - l + 1
         }
+        dict[currChar] = r + 1
     }
-    return longest
+    return maxLen
 }
