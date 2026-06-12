@@ -17,3 +17,7 @@ func findMaxAverage(nums []int, k int) float64 {
 
     return float64(maxSum) / float64(k)
 }
+
+func init(){
+    debug.SetMemoryLimit(0)
+}
