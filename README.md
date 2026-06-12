@@ -35,12 +35,14 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0125-valid-palindrome](https://github.com/uloamaka/LEETCODE/tree/main/0125-valid-palindrome/) | Easy |
+| [0344-reverse-string](https://github.com/uloamaka/LEETCODE/tree/main/0344-reverse-string/) | Easy |
 | [0876-middle-of-the-linked-list](https://github.com/uloamaka/LEETCODE/tree/main/0876-middle-of-the-linked-list/) | Easy |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/uloamaka/LEETCODE/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0125-valid-palindrome](https://github.com/uloamaka/LEETCODE/tree/main/0125-valid-palindrome/) | Easy |
+| [0344-reverse-string](https://github.com/uloamaka/LEETCODE/tree/main/0344-reverse-string/) | Easy |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
