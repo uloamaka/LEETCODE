@@ -5,9 +5,7 @@ func moveZeroes(nums []int)  {
             l++
         }
         if nums[l] == 0 && nums[r] != 0 {
-            temp := nums[l]
-            nums[l] = nums[r]
-            nums[r] = temp
+            nums[l], nums[r] = nums[r], nums[l]
         }  
         r++
     }
