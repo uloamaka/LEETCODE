@@ -4,10 +4,10 @@ func lengthOfLongestSubstring(s string) int {
     var l int
 
     for r := 0; r<len(s); r++ {
-        freq[s[r] - 'a']++
+        freq[s[r]]++
        
-        for freq[s[r] - 'a'] > 1 {
-            freq[s[l]-'a']--
+        for freq[s[r]] > 1 {
+            freq[s[l]]--
             l++
         }
 
