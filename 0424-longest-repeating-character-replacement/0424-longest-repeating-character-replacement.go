@@ -1,32 +1,23 @@
 func characterReplacement(s string, k int) int {
-    freq := map[byte]int{}
-    maxChar, curLen, l := 0, 0, 0
-
+    var freq [256]int
+    var maxChar int
+    var maxFreq int 
+    
+    var l int
     for r := 0; r < len(s); r++ {
+
         freq[s[r]]++
 
-        maxfreq := maxFreq(freq)
-        curLen = r - l + 1
-        
-        if curLen - maxfreq  > k {
+        maxFreq = max(maxFreq, freq[s[r]])
+
+        if r - l + 1 - maxFreq  > k {
             freq[s[l]]--
             l++
-            curLen = r-l+1
         }
 
-        if curLen > maxChar {
-            maxChar = curLen
+        if r-l+1 > maxChar {
+            maxChar = r-l+1
         } 
     }
     return maxChar
-}
-
-func maxFreq(m map[byte]int) int {
-    max := 0
-    for _, cnt := range m {
-        if cnt > max {
-            max = cnt
-        }
-    }
-    return max
 }
