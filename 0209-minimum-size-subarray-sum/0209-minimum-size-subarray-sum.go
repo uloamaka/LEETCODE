@@ -1,29 +1,24 @@
 func minSubArrayLen(target int, nums []int) int {
-    minLen := len(nums)
-    summer, cnt := 0, 0
+    minLen := math.MaxInt32
+    winSum := 0
 
     l := 0
     for r := 0; r < len(nums); r++ {
-        cnt++
-        summer += nums[r]
+        winSum += nums[r]
 
-        for summer >= target {
-            //check and update minLen
-            if cnt < minLen {
-                minLen = cnt
+        for winSum >= target {
+            curLen := r - l + 1
+            if curLen < minLen {
+                minLen = curLen
             }
-            // remove the value of the leaving left pnter from summer
-            summer -= nums[l]
-            // move left pnter
+           
+            winSum -= nums[l]
             l++
-            // decreament cnter
-            cnt--
-        }
-        
-        if summer < target && cnt == len(nums) {
-            minLen = 0
         }
     }
 
+    if minLen == math.MaxInt32 {
+        minLen = 0
+    }
     return minLen
 }
