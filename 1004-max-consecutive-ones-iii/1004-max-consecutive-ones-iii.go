@@ -1,6 +1,6 @@
 func longestOnes(nums []int, k int) int {
     var maxOnes, l, zeroCnt int
-    
+
     for r := 0; r < len(nums); r++ {
         if nums[r] == 0 {
             zeroCnt++
@@ -13,11 +13,7 @@ func longestOnes(nums []int, k int) int {
             l++
         }
         
-        winSize := r-l+1
-
-        if winSize > maxOnes {
-            maxOnes = winSize
-        }
+        maxOnes = max(maxOnes, r-l+1)
     } 
     return maxOnes 
 }
