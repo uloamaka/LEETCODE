@@ -3,21 +3,14 @@ func maxArea(height []int) int {
     maxArea := 0
 
     for l < r {
-        width, area := 0, 0
+        area := (r - l) * min(height[l], height[r])
+        maxArea = max(maxArea, area)
+
         if height[l] < height[r] {
-            width = r-l
-            area = width * height[l]
             l++
-        } else if height[l] == height[r] {
-            width = r-l
-            area = width * height[l]
-            r--
-        } else  {
-            width = r-l
-            area = width * height[r]
+        } else {
             r--
         }
-        maxArea = max(maxArea, area)
     }
     return maxArea
 }
