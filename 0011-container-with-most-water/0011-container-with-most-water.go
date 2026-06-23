@@ -1,34 +1,23 @@
 func maxArea(height []int) int {
-    maxArea := 0 
     l, r := 0, len(height)-1
-    for l <= r {
-        currHeight, currBase := 0, 0
+    maxArea := 0
+
+    for l < r {
+        width, area := 0, 0
         if height[l] < height[r] {
-            currHeight = height[l]
-            currBase = AbsInt(l - r)
+            width = r-l
+            area = width * height[l]
             l++
         } else if height[l] == height[r] {
-            currHeight = height[r]
-            currBase = AbsInt(l - r)
+            width = r-l
+            area = width * height[l]
             r--
-        } else {
-            currHeight = height[r]
-            currBase = AbsInt(l - r)
+        } else  {
+            width = r-l
+            area = width * height[r]
             r--
         }
-    
-        area := currHeight*currBase
-        if area > maxArea {
-            maxArea = area
-        }
-
+        maxArea = max(maxArea, area)
     }
     return maxArea
-}
-
-func AbsInt(x int) int {
-	if x < 0 {
-		return -x
-	}
-	return x
 }
