@@ -17,6 +17,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0001-two-sum](https://github.com/uloamaka/LEETCODE/tree/main/0001-two-sum/) | Easy |
 | [0011-container-with-most-water](https://github.com/uloamaka/LEETCODE/tree/main/0011-container-with-most-water/) | Medium |
 | [0015-3sum](https://github.com/uloamaka/LEETCODE/tree/main/0015-3sum/) | Medium |
+| [0016-3sum-closest](https://github.com/uloamaka/LEETCODE/tree/main/0016-3sum-closest/) | Medium |
 | [0209-minimum-size-subarray-sum](https://github.com/uloamaka/LEETCODE/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0217-contains-duplicate](https://github.com/uloamaka/LEETCODE/tree/main/0217-contains-duplicate/) | Easy |
 | [0283-move-zeroes](https://github.com/uloamaka/LEETCODE/tree/main/0283-move-zeroes/) | Easy |
@@ -40,12 +41,14 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0015-3sum](https://github.com/uloamaka/LEETCODE/tree/main/0015-3sum/) | Medium |
+| [0016-3sum-closest](https://github.com/uloamaka/LEETCODE/tree/main/0016-3sum-closest/) | Medium |
 | [0217-contains-duplicate](https://github.com/uloamaka/LEETCODE/tree/main/0217-contains-duplicate/) | Easy |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0011-container-with-most-water](https://github.com/uloamaka/LEETCODE/tree/main/0011-container-with-most-water/) | Medium |
 | [0015-3sum](https://github.com/uloamaka/LEETCODE/tree/main/0015-3sum/) | Medium |
+| [0016-3sum-closest](https://github.com/uloamaka/LEETCODE/tree/main/0016-3sum-closest/) | Medium |
 | [0125-valid-palindrome](https://github.com/uloamaka/LEETCODE/tree/main/0125-valid-palindrome/) | Easy |
 | [0283-move-zeroes](https://github.com/uloamaka/LEETCODE/tree/main/0283-move-zeroes/) | Easy |
 | [0344-reverse-string](https://github.com/uloamaka/LEETCODE/tree/main/0344-reverse-string/) | Easy |
