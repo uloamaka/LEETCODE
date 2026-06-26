@@ -1,25 +1,23 @@
 func totalFruit(fruits []int) int {
-    fruitsM := make(map[int]int)
-    start := 0
-    maxFruits := 0
+    seen := make(map[int]int)
+    var ans int
 
-    for end := 0; end < len(fruits); end++ {
-        fruitsM[fruits[end]]++
+    l := 0 
+    for r := 0; r < len(fruits); r++ {
+        seen[fruits[r]]++
 
-        if len(fruitsM) > 2 {
-            fruitsM[fruits[start]]--
-
-            if fruitsM[fruits[start]] == 0 {
-                delete(fruitsM, fruits[start])
+        for len(seen) > 2 {
+            seen[fruits[l]]--
+            if  seen[fruits[l]] == 0 {
+                delete(seen, fruits[l])
             }
-            start++
+            l++
         }
-        
-        windowSize := end - start + 1
-        if windowSize > maxFruits {
-            maxFruits = windowSize
-        }
-    }
 
-    return maxFruits
+        winSize := r-l+1
+        if winSize > ans {
+            ans = winSize
+        }
+    } 
+    return ans
 }
