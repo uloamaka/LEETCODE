@@ -22,6 +22,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0217-contains-duplicate](https://github.com/uloamaka/LEETCODE/tree/main/0217-contains-duplicate/) | Easy |
 | [0283-move-zeroes](https://github.com/uloamaka/LEETCODE/tree/main/0283-move-zeroes/) | Easy |
 | [0643-maximum-average-subarray-i](https://github.com/uloamaka/LEETCODE/tree/main/0643-maximum-average-subarray-i/) | Easy |
+| [0904-fruit-into-baskets](https://github.com/uloamaka/LEETCODE/tree/main/0904-fruit-into-baskets/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/uloamaka/LEETCODE/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1695-maximum-erasure-value](https://github.com/uloamaka/LEETCODE/tree/main/1695-maximum-erasure-value/) | Medium |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/uloamaka/LEETCODE/tree/main/2461-maximum-sum-of-distinct-subarrays-with-length-k/) | Medium |
@@ -34,6 +35,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0424-longest-repeating-character-replacement](https://github.com/uloamaka/LEETCODE/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [0438-find-all-anagrams-in-a-string](https://github.com/uloamaka/LEETCODE/tree/main/0438-find-all-anagrams-in-a-string/) | Medium |
 | [0567-permutation-in-string](https://github.com/uloamaka/LEETCODE/tree/main/0567-permutation-in-string/) | Medium |
+| [0904-fruit-into-baskets](https://github.com/uloamaka/LEETCODE/tree/main/0904-fruit-into-baskets/) | Medium |
 | [1695-maximum-erasure-value](https://github.com/uloamaka/LEETCODE/tree/main/1695-maximum-erasure-value/) | Medium |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/uloamaka/LEETCODE/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/uloamaka/LEETCODE/tree/main/2461-maximum-sum-of-distinct-subarrays-with-length-k/) | Medium |
@@ -77,6 +79,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0438-find-all-anagrams-in-a-string](https://github.com/uloamaka/LEETCODE/tree/main/0438-find-all-anagrams-in-a-string/) | Medium |
 | [0567-permutation-in-string](https://github.com/uloamaka/LEETCODE/tree/main/0567-permutation-in-string/) | Medium |
 | [0643-maximum-average-subarray-i](https://github.com/uloamaka/LEETCODE/tree/main/0643-maximum-average-subarray-i/) | Easy |
+| [0904-fruit-into-baskets](https://github.com/uloamaka/LEETCODE/tree/main/0904-fruit-into-baskets/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/uloamaka/LEETCODE/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1695-maximum-erasure-value](https://github.com/uloamaka/LEETCODE/tree/main/1695-maximum-erasure-value/) | Medium |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/uloamaka/LEETCODE/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
