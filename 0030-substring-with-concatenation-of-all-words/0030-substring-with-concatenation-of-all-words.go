@@ -2,44 +2,46 @@ func findSubstring(s string, words []string) []int {
     wordLen := len(words[0])
     ans := []int{}
 
-    required := make(map[string]int)
+    required := map[string]int{}
     for _, word := range words {
         required[word]++
     }
 
-    for offset := 0; offset < wordLen; offset++ {
-        left, right := offset, offset
+    for offset := 0; offset < wordLen; offset++{
         window := map[string]int{}
         matched := 0
 
+        left, right := offset, offset
+        
         for right+wordLen <= len(s) {
-            word := s[right:right+wordLen]
+            curWord := s[right:right+wordLen]
             right += wordLen
 
-            window[word]++
-            matched++
-
-            if _, ok := required[word]; !ok {
+            if _, ok := required[curWord]; !ok {
                 clear(window)
-                matched = 0
                 left = right
+                matched = 0
                 continue
             }
 
-            for window[word] > required[word] {
-                leftWord := s[left:left+wordLen]
+            window[curWord]++
+            matched++
 
-                window[leftWord]--
+            for window[curWord] > required[curWord] {
+                leftword := s[left:left+wordLen]
+                
+                window[leftword]--
                 matched--
 
                 left += wordLen
-            }
+            } 
 
             if matched == len(words) {
                 ans = append(ans, left)
             }
+
         }
+
     }
-    
     return ans
 }
