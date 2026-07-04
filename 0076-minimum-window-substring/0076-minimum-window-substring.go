@@ -18,7 +18,7 @@ func minWindow(s string, t string) string {
     for r := 0; r < len(s); r++ {
         window[s[r]]++
 
-        if _, ok := required[s[r]]; ok && required[s[r]] == window[s[r]] {
+        if required[s[r]] == window[s[r]] {
             formed++
         }
 
