@@ -18,6 +18,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0011-container-with-most-water](https://github.com/uloamaka/LEETCODE/tree/main/0011-container-with-most-water/) | Medium |
 | [0015-3sum](https://github.com/uloamaka/LEETCODE/tree/main/0015-3sum/) | Medium |
 | [0016-3sum-closest](https://github.com/uloamaka/LEETCODE/tree/main/0016-3sum-closest/) | Medium |
+| [0041-first-missing-positive](https://github.com/uloamaka/LEETCODE/tree/main/0041-first-missing-positive/) | Hard |
 | [0209-minimum-size-subarray-sum](https://github.com/uloamaka/LEETCODE/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0217-contains-duplicate](https://github.com/uloamaka/LEETCODE/tree/main/0217-contains-duplicate/) | Easy |
 | [0239-sliding-window-maximum](https://github.com/uloamaka/LEETCODE/tree/main/0239-sliding-window-maximum/) | Hard |
@@ -34,6 +35,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0001-two-sum](https://github.com/uloamaka/LEETCODE/tree/main/0001-two-sum/) | Easy |
 | [0003-longest-substring-without-repeating-characters](https://github.com/uloamaka/LEETCODE/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/uloamaka/LEETCODE/tree/main/0030-substring-with-concatenation-of-all-words/) | Hard |
+| [0041-first-missing-positive](https://github.com/uloamaka/LEETCODE/tree/main/0041-first-missing-positive/) | Hard |
 | [0076-minimum-window-substring](https://github.com/uloamaka/LEETCODE/tree/main/0076-minimum-window-substring/) | Hard |
 | [0217-contains-duplicate](https://github.com/uloamaka/LEETCODE/tree/main/0217-contains-duplicate/) | Easy |
 | [0424-longest-repeating-character-replacement](https://github.com/uloamaka/LEETCODE/tree/main/0424-longest-repeating-character-replacement/) | Medium |
