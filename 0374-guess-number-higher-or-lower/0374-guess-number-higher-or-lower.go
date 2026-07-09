@@ -8,19 +8,19 @@
  */
 
 func guessNumber(n int) int {
-    left, right := 0, n
+    left, right := 1, n
 
     for left < right {
-        midNum := left + (right-left) / 2
+        mid := left + (right-left) / 2
 
-        guessRes := guess(midNum)
-        if guessRes == 0 {
-            return midNum
-        } else if guessRes == -1 {
-            right = midNum
+        res := guess(mid)
+        if res == 0 {
+            return mid
+        } else if res == -1 {
+            right = mid
         } else {
-            left = midNum+1
+            left = mid+1
         }
     }
-    return n
+    return left
 }
