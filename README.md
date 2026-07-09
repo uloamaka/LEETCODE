@@ -18,6 +18,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0011-container-with-most-water](https://github.com/uloamaka/LEETCODE/tree/main/0011-container-with-most-water/) | Medium |
 | [0015-3sum](https://github.com/uloamaka/LEETCODE/tree/main/0015-3sum/) | Medium |
 | [0016-3sum-closest](https://github.com/uloamaka/LEETCODE/tree/main/0016-3sum-closest/) | Medium |
+| [0035-search-insert-position](https://github.com/uloamaka/LEETCODE/tree/main/0035-search-insert-position/) | Easy |
 | [0041-first-missing-positive](https://github.com/uloamaka/LEETCODE/tree/main/0041-first-missing-positive/) | Hard |
 | [0209-minimum-size-subarray-sum](https://github.com/uloamaka/LEETCODE/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0217-contains-duplicate](https://github.com/uloamaka/LEETCODE/tree/main/0217-contains-duplicate/) | Easy |
@@ -107,6 +108,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0035-search-insert-position](https://github.com/uloamaka/LEETCODE/tree/main/0035-search-insert-position/) | Easy |
 | [0209-minimum-size-subarray-sum](https://github.com/uloamaka/LEETCODE/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0278-first-bad-version](https://github.com/uloamaka/LEETCODE/tree/main/0278-first-bad-version/) | Easy |
 | [0374-guess-number-higher-or-lower](https://github.com/uloamaka/LEETCODE/tree/main/0374-guess-number-higher-or-lower/) | Easy |
