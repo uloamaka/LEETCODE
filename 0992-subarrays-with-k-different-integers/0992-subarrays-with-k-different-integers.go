@@ -3,34 +3,26 @@ func subarraysWithKDistinct(nums []int, k int) int {
 }
 
 func atMost(nums []int, k int) int {
-    if k < 0 {
-        return 0
-    }
-
-    seen := make(map[int]int)
+    freq := make(map[int]int)
 
     left := 0
-    ans := 0
+    totalCnt := 0
 
     for right := 0; right < len(nums); right++ {
-        if seen[nums[right]] == 0 {
-            k--
-        }
+        freq[nums[right]]++
 
-        seen[nums[right]]++
+        for len(freq) > k {
+            freq[nums[left]]--
 
-        for k < 0 {
-            seen[nums[left]]--
-
-            if seen[nums[left]] == 0 {
-                k++
+            if freq[nums[left]] == 0 {
+                delete(freq, nums[left])
             }
 
             left++
         }
 
-        ans += right - left + 1
+        totalCnt += right - left + 1
     }
 
-    return ans
+    return totalCnt
 }
