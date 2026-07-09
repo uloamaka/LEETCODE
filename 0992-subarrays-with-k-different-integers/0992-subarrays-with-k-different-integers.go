@@ -1,6 +1,4 @@
 func subarraysWithKDistinct(nums []int, k int) int {
-    fmt.Println(atMost(nums, k))
-    fmt.Println(atMost(nums, k)-1)
     return atMost(nums, k) - atMost(nums, k-1)
 }
 
