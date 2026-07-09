@@ -106,6 +106,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/uloamaka/LEETCODE/tree/main/0209-minimum-size-subarray-sum/) | Medium |
+| [0278-first-bad-version](https://github.com/uloamaka/LEETCODE/tree/main/0278-first-bad-version/) | Easy |
 | [1004-max-consecutive-ones-iii](https://github.com/uloamaka/LEETCODE/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 ## Prefix Sum
 | Problem Name | Difficulty |
@@ -128,4 +129,8 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0239-sliding-window-maximum](https://github.com/uloamaka/LEETCODE/tree/main/0239-sliding-window-maximum/) | Hard |
+## Interactive
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0278-first-bad-version](https://github.com/uloamaka/LEETCODE/tree/main/0278-first-bad-version/) | Easy |
 <!---LeetCode Topics End-->
