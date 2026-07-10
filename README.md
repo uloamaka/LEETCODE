@@ -110,6 +110,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0035-search-insert-position](https://github.com/uloamaka/LEETCODE/tree/main/0035-search-insert-position/) | Easy |
+| [0069-sqrtx](https://github.com/uloamaka/LEETCODE/tree/main/0069-sqrtx/) | Easy |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/uloamaka/LEETCODE/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0209-minimum-size-subarray-sum](https://github.com/uloamaka/LEETCODE/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0278-first-bad-version](https://github.com/uloamaka/LEETCODE/tree/main/0278-first-bad-version/) | Easy |
@@ -141,4 +142,8 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | ------- | ------- |
 | [0278-first-bad-version](https://github.com/uloamaka/LEETCODE/tree/main/0278-first-bad-version/) | Easy |
 | [0374-guess-number-higher-or-lower](https://github.com/uloamaka/LEETCODE/tree/main/0374-guess-number-higher-or-lower/) | Easy |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0069-sqrtx](https://github.com/uloamaka/LEETCODE/tree/main/0069-sqrtx/) | Easy |
 <!---LeetCode Topics End-->
