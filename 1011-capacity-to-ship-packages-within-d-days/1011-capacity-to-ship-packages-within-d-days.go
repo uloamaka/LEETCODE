@@ -8,30 +8,33 @@ func shipWithinDays(weights []int, days int) int {
         }
     }
 
-    minCap, maxCap := maxWeight, totalWeight
-    for minCap < maxCap {
-        mid := minCap + (maxCap-minCap) / 2
+    left, right := maxWeight, totalWeight
+    for left < right {
+        mid := left + (right-left) / 2
 
-        estDays := getDays(weights, mid)
+        estDays := daysNeeded(weights, mid)
         if estDays <= days {
-            maxCap = mid
+            right = mid
         } else {
-            minCap = mid+1
+            left = mid+1
         }
     }
-    return minCap
+    return left
 }
 
-func getDays(weights []int, shpCap int) int {
-    summer := 0
-    cnt := 1
+func daysNeeded(weights []int, capacity int) int {
+    currentLoad := 0
+    days := 1
     for _, weight := range weights {
-        if summer + weight > shpCap {
-            cnt++
-            summer = weight
+        if currentLoad + weight > capacity {
+            days++
+            currentLoad = weight
         } else {
-            summer += weight
+            currentLoad += weight
         }
     }
-    return cnt
+    return days
 }
+
+// Time: O(n log W)
+// Space: O(1)
