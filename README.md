@@ -34,6 +34,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/uloamaka/LEETCODE/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1695-maximum-erasure-value](https://github.com/uloamaka/LEETCODE/tree/main/1695-maximum-erasure-value/) | Medium |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/uloamaka/LEETCODE/tree/main/2461-maximum-sum-of-distinct-subarrays-with-length-k/) | Medium |
+| [2799-count-complete-subarrays-in-an-array](https://github.com/uloamaka/LEETCODE/tree/main/2799-count-complete-subarrays-in-an-array/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -51,6 +52,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [1695-maximum-erasure-value](https://github.com/uloamaka/LEETCODE/tree/main/1695-maximum-erasure-value/) | Medium |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/uloamaka/LEETCODE/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/uloamaka/LEETCODE/tree/main/2461-maximum-sum-of-distinct-subarrays-with-length-k/) | Medium |
+| [2799-count-complete-subarrays-in-an-array](https://github.com/uloamaka/LEETCODE/tree/main/2799-count-complete-subarrays-in-an-array/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -104,6 +106,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [1695-maximum-erasure-value](https://github.com/uloamaka/LEETCODE/tree/main/1695-maximum-erasure-value/) | Medium |
 | [1876-substrings-of-size-three-with-distinct-characters](https://github.com/uloamaka/LEETCODE/tree/main/1876-substrings-of-size-three-with-distinct-characters/) | Easy |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/uloamaka/LEETCODE/tree/main/2461-maximum-sum-of-distinct-subarrays-with-length-k/) | Medium |
+| [2799-count-complete-subarrays-in-an-array](https://github.com/uloamaka/LEETCODE/tree/main/2799-count-complete-subarrays-in-an-array/) | Medium |
 ## Counting
 | Problem Name | Difficulty |
 | ------- | ------- |
