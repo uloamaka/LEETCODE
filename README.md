@@ -30,6 +30,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0904-fruit-into-baskets](https://github.com/uloamaka/LEETCODE/tree/main/0904-fruit-into-baskets/) | Medium |
 | [0992-subarrays-with-k-different-integers](https://github.com/uloamaka/LEETCODE/tree/main/0992-subarrays-with-k-different-integers/) | Hard |
 | [1004-max-consecutive-ones-iii](https://github.com/uloamaka/LEETCODE/tree/main/1004-max-consecutive-ones-iii/) | Medium |
+| [1011-capacity-to-ship-packages-within-d-days](https://github.com/uloamaka/LEETCODE/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1695-maximum-erasure-value](https://github.com/uloamaka/LEETCODE/tree/main/1695-maximum-erasure-value/) | Medium |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/uloamaka/LEETCODE/tree/main/2461-maximum-sum-of-distinct-subarrays-with-length-k/) | Medium |
 ## Hash Table
@@ -118,6 +119,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0374-guess-number-higher-or-lower](https://github.com/uloamaka/LEETCODE/tree/main/0374-guess-number-higher-or-lower/) | Easy |
 | [0704-binary-search](https://github.com/uloamaka/LEETCODE/tree/main/0704-binary-search/) | Easy |
 | [1004-max-consecutive-ones-iii](https://github.com/uloamaka/LEETCODE/tree/main/1004-max-consecutive-ones-iii/) | Medium |
+| [1011-capacity-to-ship-packages-within-d-days](https://github.com/uloamaka/LEETCODE/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
