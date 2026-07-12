@@ -1,32 +1,43 @@
 func searchRange(nums []int, target int) []int {
-    ans := []int{-1,-1}
+    lower := lowerBound(nums, target)
+
+    if lower == len(nums) || nums[lower] != target {
+        return []int{-1, -1}
+    }
+
+    upper := upperBound(nums, target)
+
+    return []int{lower, upper - 1}
+}
+
+func lowerBound(nums []int, target int) int {
     left, right := 0, len(nums)
+
     for left < right {
-        mid := left + (right-left) / 2
-        
-        if nums[mid] == target {
-            ans[0] = mid
-        }
+        mid := left + (right-left)/2
 
         if nums[mid] < target {
-            left = mid+1
+            left = mid + 1
         } else {
             right = mid
         }
     }
 
-    left2, right2 := 0, len(nums)
-    for left2 < right2 {
-        mid := left2 + (right2-left2) / 2
+    return left
+}
 
-        if nums[mid] == target {
-            ans[1] = mid
-        } 
+func upperBound(nums []int, target int) int {
+    left, right := 0, len(nums)
+
+    for left < right {
+        mid := left + (right-left)/2
+
         if nums[mid] <= target {
-            left2 = mid+1
+            left = mid + 1
         } else {
-            right2 = mid
+            right = mid
         }
     }
-    return ans
+
+    return left
 }
