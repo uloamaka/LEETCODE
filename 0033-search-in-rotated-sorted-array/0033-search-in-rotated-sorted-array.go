@@ -1,27 +1,29 @@
-func search(nums []int, target int) int {
-    left, right := 0, len(nums)-1
-
-    for left <= right {
-        mid := left + (right-left)/2
-        
-        if nums[mid] == target {
-            return mid
-        }
-
-        if nums[left] <= nums[mid] {
-            if nums[left] <= target && target < nums[mid] {
-                right = mid - 1
-            } else {
-                left = mid + 1
-            }
-        } else {
-            if nums[mid] < target && target <= nums[right] {
-                left = mid + 1
-            } else {
-                right = mid - 1
-            }
-        }
+func binarySearch(nums []int, left, right, target int) int{
+    if left > right {
+        return -1
     }
 
-    return -1
+    mid := left + (right-left)/2
+    if nums[mid] == target {
+        return mid
+    }
+
+    // left - mid part is sorted
+    if nums[left] <= nums[mid] {
+        if target >= nums[left] && target < nums[mid] {
+            return binarySearch(nums, left, mid-1, target)
+        }
+        return binarySearch(nums, mid+1, right, target)
+    } else {
+        // mid - right is sorted
+        if target <= nums[right] && nums[mid] < target {
+            return binarySearch(nums, mid+1, right, target)   
+        }
+        return binarySearch(nums, left, mid-1, target)
+    }
+}
+
+
+func search(nums []int, target int) int {
+    return binarySearch(nums, 0, len(nums)-1, target)
 }
