@@ -18,6 +18,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0011-container-with-most-water](https://github.com/uloamaka/LEETCODE/tree/main/0011-container-with-most-water/) | Medium |
 | [0015-3sum](https://github.com/uloamaka/LEETCODE/tree/main/0015-3sum/) | Medium |
 | [0016-3sum-closest](https://github.com/uloamaka/LEETCODE/tree/main/0016-3sum-closest/) | Medium |
+| [0033-search-in-rotated-sorted-array](https://github.com/uloamaka/LEETCODE/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/uloamaka/LEETCODE/tree/main/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0035-search-insert-position](https://github.com/uloamaka/LEETCODE/tree/main/0035-search-insert-position/) | Easy |
 | [0041-first-missing-positive](https://github.com/uloamaka/LEETCODE/tree/main/0041-first-missing-positive/) | Hard |
@@ -117,6 +118,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0033-search-in-rotated-sorted-array](https://github.com/uloamaka/LEETCODE/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/uloamaka/LEETCODE/tree/main/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0035-search-insert-position](https://github.com/uloamaka/LEETCODE/tree/main/0035-search-insert-position/) | Easy |
 | [0069-sqrtx](https://github.com/uloamaka/LEETCODE/tree/main/0069-sqrtx/) | Easy |
