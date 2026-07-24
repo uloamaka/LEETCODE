@@ -22,6 +22,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/uloamaka/LEETCODE/tree/main/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0035-search-insert-position](https://github.com/uloamaka/LEETCODE/tree/main/0035-search-insert-position/) | Easy |
 | [0041-first-missing-positive](https://github.com/uloamaka/LEETCODE/tree/main/0041-first-missing-positive/) | Hard |
+| [0081-search-in-rotated-sorted-array-ii](https://github.com/uloamaka/LEETCODE/tree/main/0081-search-in-rotated-sorted-array-ii/) | Medium |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/uloamaka/LEETCODE/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0209-minimum-size-subarray-sum](https://github.com/uloamaka/LEETCODE/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0217-contains-duplicate](https://github.com/uloamaka/LEETCODE/tree/main/0217-contains-duplicate/) | Easy |
@@ -122,6 +123,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/uloamaka/LEETCODE/tree/main/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0035-search-insert-position](https://github.com/uloamaka/LEETCODE/tree/main/0035-search-insert-position/) | Easy |
 | [0069-sqrtx](https://github.com/uloamaka/LEETCODE/tree/main/0069-sqrtx/) | Easy |
+| [0081-search-in-rotated-sorted-array-ii](https://github.com/uloamaka/LEETCODE/tree/main/0081-search-in-rotated-sorted-array-ii/) | Medium |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/uloamaka/LEETCODE/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0209-minimum-size-subarray-sum](https://github.com/uloamaka/LEETCODE/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0240-search-a-2d-matrix-ii](https://github.com/uloamaka/LEETCODE/tree/main/0240-search-a-2d-matrix-ii/) | Medium |
