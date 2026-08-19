@@ -1,17 +1,16 @@
 func runningSum(nums []int) []int {
     ans := []int{}
-    sum := 0
+
     for i := 0; i < len(nums); i++ {
-        sum += recur(nums, i)
-        ans = append(ans, sum)
+        ans = append(ans, recur(nums, i))
     }
    
     return ans
 }
 
 func recur(nums []int, n int) int {
-    if n == len(nums) {
-        return 0
+    if n == 0 {
+        return nums[0]
     }
-    return nums[n]
+    return nums[n] + recur(nums, n-1)
 }
