@@ -37,6 +37,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0992-subarrays-with-k-different-integers](https://github.com/uloamaka/LEETCODE/tree/main/0992-subarrays-with-k-different-integers/) | Hard |
 | [1004-max-consecutive-ones-iii](https://github.com/uloamaka/LEETCODE/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/uloamaka/LEETCODE/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
+| [1480-running-sum-of-1d-array](https://github.com/uloamaka/LEETCODE/tree/main/1480-running-sum-of-1d-array/) | Easy |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/uloamaka/LEETCODE/tree/main/1482-minimum-number-of-days-to-make-m-bouquets/) | Medium |
 | [1695-maximum-erasure-value](https://github.com/uloamaka/LEETCODE/tree/main/1695-maximum-erasure-value/) | Medium |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/uloamaka/LEETCODE/tree/main/2461-maximum-sum-of-distinct-subarrays-with-length-k/) | Medium |
@@ -143,6 +144,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | ------- | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/uloamaka/LEETCODE/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/uloamaka/LEETCODE/tree/main/1004-max-consecutive-ones-iii/) | Medium |
+| [1480-running-sum-of-1d-array](https://github.com/uloamaka/LEETCODE/tree/main/1480-running-sum-of-1d-array/) | Easy |
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
