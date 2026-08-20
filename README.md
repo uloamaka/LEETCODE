@@ -22,6 +22,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/uloamaka/LEETCODE/tree/main/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0035-search-insert-position](https://github.com/uloamaka/LEETCODE/tree/main/0035-search-insert-position/) | Easy |
 | [0041-first-missing-positive](https://github.com/uloamaka/LEETCODE/tree/main/0041-first-missing-positive/) | Hard |
+| [0078-subsets](https://github.com/uloamaka/LEETCODE/tree/main/0078-subsets/) | Medium |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/uloamaka/LEETCODE/tree/main/0081-search-in-rotated-sorted-array-ii/) | Medium |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/uloamaka/LEETCODE/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0162-find-peak-element](https://github.com/uloamaka/LEETCODE/tree/main/0162-find-peak-element/) | Medium |
@@ -181,6 +182,7 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0078-subsets](https://github.com/uloamaka/LEETCODE/tree/main/0078-subsets/) | Medium |
 | [0222-count-complete-tree-nodes](https://github.com/uloamaka/LEETCODE/tree/main/0222-count-complete-tree-nodes/) | Medium |
 ## Tree
 | Problem Name | Difficulty |
@@ -190,4 +192,8 @@ Created with :heart: by [LeetPush](https://github.com/husamahmud/LeetPush)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0222-count-complete-tree-nodes](https://github.com/uloamaka/LEETCODE/tree/main/0222-count-complete-tree-nodes/) | Medium |
+## Backtracking
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0078-subsets](https://github.com/uloamaka/LEETCODE/tree/main/0078-subsets/) | Medium |
 <!---LeetCode Topics End-->
