@@ -1,23 +1,25 @@
 func subsets(nums []int) [][]int {
-    result := [][]int{}
+    ans := [][]int{}
+    subset := []int{}
 
-    var explore func(arr []int, i int, temp []int)
+    var dfs func(n int)
 
-    explore = func(arr []int, i int, temp []int) {
-        if len(arr) == i {
-            copyTemp := append([]int{}, temp...)
-            result = append(result, copyTemp)
+    dfs = func(n int) {
+        if n == len(nums) {
+            copySubset := append([]int{}, subset...)
+            ans = append(ans, copySubset)
             return
         }
 
-        temp = append(temp, arr[i])
-        explore(arr, i+1, temp)
+        // Include nums[n]
+        subset = append(subset, nums[n])
+        dfs(n + 1)
 
-        temp = temp[:len(temp)-1]
-        explore(arr, i+1, temp)
+        // Don't include nums[n]
+        subset = subset[:len(subset)-1]
+        dfs(n + 1)
     }
 
-    explore(nums, 0, []int{})
-
-    return result
+    dfs(0)
+    return ans
 }
